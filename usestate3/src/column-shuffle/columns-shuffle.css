@@ -1,0 +1,35 @@
+.container {
+    height: 300px;
+    width: 500px;
+    margin: 100px;
+    display: grid;
+    grid-template-columns: 4fr 0.5fr 4fr;
+    border: 1px solid #e7e7e7;
+    .box {
+        flex-grow: 1;
+        height: 100%;
+        overflow-y: scroll;
+        padding: 10px;
+        box-sizing: border-box;
+        p {
+            margin: 0;
+            padding: 10px;
+        }
+        .active {
+            background-color: #e7e7e7;
+            color: #000;
+        }
+    }
+    .options{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        button {
+            border-radius: 20px;
+            width: 40px;
+            height: 40px;
+            border: none;
+        }
+    }
+}

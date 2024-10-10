@@ -1,0 +1,71 @@
+.cart-sidebar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #141313ac;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+  .sidebar {
+    width: 350px;
+    background-color: #f4f7fc;
+    height: 100%;
+    .head {
+      display: flex;
+      justify-content: space-between;
+      background-color: #fff;
+      align-items: center;
+      padding: 14px 10px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .products {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      border-radius: 10px;
+      margin: 10px;
+      background-color: #fff;
+      .product {
+        img {
+          width: 60px;
+          border: 0.4px solid #e3e3e3;
+          border-radius: 10px;
+        }
+        .title-box {
+          display: flex;
+          font-size: 0.8rem;
+          flex-direction: column;
+          gap: 10px;
+          flex-grow: 1;
+        }
+        .btn-group {
+          min-width: 70px;
+          display: flex;
+          align-items: center;
+          color: #fff;
+          border-radius: 4px;
+          background-color: #328616;
+          font-weight: 500;
+          padding: 5px 0;
+          span {
+            font-size: 0.8rem;
+          }
+          button {
+            border: none;
+            color: inherit;
+            cursor: pointer;
+            background-color: transparent;
+            flex-grow: 1;
+          }
+        }
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+      }
+    }
+  }
+}

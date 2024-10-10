@@ -1,0 +1,11 @@
+@import "./colors.scss";
+
+.container {
+  height: 100vh;
+  background-color: $background;
+  color: $white;
+}
+.container.light {
+  background-color: $light-background;
+  color: $black;
+}

@@ -1,0 +1,43 @@
+body {
+    background-color: #F1F5F8;
+}
+
+h1 {
+    text-align: center;
+}
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    span {
+        cursor: pointer;
+    }
+    .active {
+        color: orange;
+    }
+}
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    .card {
+        padding: 10px;
+        display: flex;
+        gap: 10px;
+        img {
+            width: 30%; 
+            object-fit: cover;
+            border: 1px solid orange;
+            border-radius: 5px;
+        }
+        .top {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px dotted gray;
+        }
+        .description {
+            margin: 0;
+        }
+    }
+}

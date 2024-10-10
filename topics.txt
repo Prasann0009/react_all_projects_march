@@ -1,0 +1,14 @@
+modules in javascript 
+JSX (javascript XML)
+-- pending : VDOM and RDOM 
+components in React
+
+React component Life cycle methods
+
+
+-- Monday 
+
+state of the component
+class components
+VDOM
+component life cycle

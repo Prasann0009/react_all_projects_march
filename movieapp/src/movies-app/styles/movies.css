@@ -1,0 +1,37 @@
+.movies-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    gap: 20px;
+    .movie-card {
+        padding: 10px;
+        background-color: #e3e3e3;
+        border-radius: 10px;
+        color: #000;
+        .image-container {
+            height: 300px;
+            position: relative;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            .material-icons {
+                font-size: 0.6rem !important;
+            }
+            .rating{
+                backdrop-filter: blur(10px);
+                color: #fff;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                font-size: 0.6rem;
+                position:absolute;
+                bottom: 10px;
+                left: 10px;
+                font-weight: 900;
+            }
+        }
+    }
+}

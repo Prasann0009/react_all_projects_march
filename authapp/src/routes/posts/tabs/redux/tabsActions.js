@@ -1,0 +1,10 @@
+export const TabActions = {
+    UPDATE_APISTATUS: "UPDATE_APISTATUS",
+    MOVE_USER: "MOVE_USER"
+}
+
+export const TabIds = {
+    FOLLOWERS: "FOLLOWERS",
+    FOLLOWING: "FOLLOWING",
+    SUGGESTIONS: "SUGGESTIONS"
+}

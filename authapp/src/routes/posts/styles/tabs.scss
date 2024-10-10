@@ -1,0 +1,49 @@
+.root-tabs-container {
+  padding: 1rem;
+  .ant-tabs-tab-btn {
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+  .ant-tabs-ink-bar {
+    background-color: #0095f6 !important;
+  }
+  .users-list {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    gap: 10px;
+    .user {
+      padding: 10px 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 0.1px solid #e3e3e3;
+      color: #fff;
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        .label {
+          color: #a8a8a8;
+          font-size: 0.9rem;
+        }
+      }
+      .right {
+        button {
+          border: none;
+          background-color: #0095f6;
+          color: #fff;
+          font-weight: 600;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          &:hover {
+            scale: 1.01;
+          }
+        }
+      }
+    }
+  }
+}

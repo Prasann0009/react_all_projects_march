@@ -1,0 +1,31 @@
+@import "./colors.scss";
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: $text;
+  &.light {
+    color: $black;
+  }
+  input {
+    flex-grow: 1;
+    border: none;
+    padding: 10px;
+    color: inherit;
+    background-color: transparent;
+  }
+  input::placeholder {
+    color: inherit;
+  }
+  input:focus {
+    outline: none;
+  }
+  .icon {
+    border: 1px solid $border-color;
+    &.light {
+      background-color: $white;
+      border: none;
+    }
+  }
+}

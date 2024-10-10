@@ -1,0 +1,116 @@
+@mixin vertical_center() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.root-posts-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 12fr;
+  .left-box {
+    .userinfo {
+      padding: 20px;
+      border-bottom: 1px solid #e3e3e3;
+      p {
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.3rem;
+      }
+      .options {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-evenly;
+      }
+      .item {
+        @include vertical_center();
+        gap: 10px;
+        .value {
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+      }
+      .layer {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .add-post {
+        width: 80px;
+        height: 80px;
+        background-color: #e3e3e3;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 2rem;
+      }
+      .add-post:hover {
+        background-color: #000;
+        color: #fff;
+        scale: 1.01;
+      }
+    }
+
+    .posts-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+      .post {
+        box-shadow: 1px 1px 10px #e3e3e3;
+        padding: 20px;
+        max-width: 100%;
+        border-radius: 10px;
+        p {
+          word-wrap: break-word;
+        }
+        img {
+          width: 90%;
+          height: 200px;
+          object-fit: contain;
+          margin: auto;
+        }
+        .footer {
+          display: flex;
+          gap: 1rem;
+          padding: 10px;
+          align-items: center;
+          .item {
+            display: flex;
+            border: 1px solid #e3e3e3;
+            width: 50px;
+            padding: 5px;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: 0.3s;
+          }
+          .item:hover {
+            background-color: #000;
+            color: #fff;
+          }
+        }
+        .comments {
+          padding: 10px;
+          background-color: #ececec43;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .comment {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 6px;
+            .item {
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+    }
+  }
+}

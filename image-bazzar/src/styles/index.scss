@@ -1,0 +1,38 @@
+.container {
+  max-height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 10fr 1fr;
+  .images-list {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    overflow-y: scroll;
+    .image-wrapper {
+      height: 350px;
+      cursor: pointer;
+      transition: 0.6s;
+    }
+    .image-wrapper:hover {
+      scale: 1.02;
+    }
+  }
+  .pagenation-box {
+    display: flex;
+    justify-self: end;
+    padding-right: 2rem;
+    align-items: center;
+    gap: 10px;
+    button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    button:disabled {
+      color: red;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+$height: 40px;
+
+@mixin rounded() {
+  height: $height;
+  box-sizing: border-box;
+  padding: 4px 1.2rem;
+  border-radius: calc($height / 2);
+  border: none;
+}
+
+.search-container {
+  display: flex;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  input {
+    flex-grow: 1;
+    max-width: 50%;
+    @include rounded();
+  }
+  button {
+    @include rounded();
+    cursor: pointer;
+    background-color: blue;
+    color: #fff;
+    font-weight: 600;
+  }
+  input:focus {
+    outline: none;
+  }
+}

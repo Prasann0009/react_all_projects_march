@@ -1,0 +1,36 @@
+@import "./colors.scss";
+
+@mixin flex() {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  @include flex();
+  justify-content: space-between;
+  padding: 20px 3rem;
+  .right {
+    @include flex();
+    gap: 1rem;
+    .timer {
+      @include flex();
+      gap: 10px;
+      height: 30px;
+      border-radius: 25px;
+      padding: 10px;
+      background-color: $bg_01123B;
+      &.light {
+        background-color: $white;
+      }
+    }
+    .cart {
+      background-color: $bg_01123B;
+    }
+    .message {
+      border: 1px solid $border-color;
+      &.light {
+        border: none;
+      }
+    }
+  }
+}
